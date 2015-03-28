@@ -1,0 +1,18 @@
+<template name="listcontact">
+    <div class="page-header">
+        <h1>Contacts ></h1> 
+    </div>
+     {{#each contactlist}}
+        <table class="table table-bordered">
+        
+                <tr id="ContactRow" class="{{selectedcontact}}">
+                    <th>{{name}}</th>
+                    <th>{{contact}}</th>
+                    <th><button type="button" class="btn btn-default" id="Edit"><a href="{{pathFor 'edit12'}}">Edit</a></button></th>
+                    <th><button type="button" class="btn btn-default" id="Delete">Delete</button></th>
+    
+                </tr>
+           
+        </table>
+    {{/each}}
+</template>
